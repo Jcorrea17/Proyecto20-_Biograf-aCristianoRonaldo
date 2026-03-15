@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Biografía Cristiano Ronaldo</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+
+header{
+background-size:cover;
+background-position:center;
+height:500px;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+header h1{
+background:rgba(0,0,0,0.6);
+padding:20px;
+border-radius:10px;
+}
+
+.section-title{
+margin-top:60px;
+margin-bottom:30px;
+text-align:center;
+}
+
+.timeline{
+border-left:3px solid #0d6efd;
+padding-left:20px;
+}
+
+.timeline div{
+margin-bottom:20px;
+}
+
+footer{
+background:#212529;
+color:white;
+padding:20px;
+text-align:center;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+<script>
+
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+
+const updateCounter = () => {
+
+const target = +counter.getAttribute('data-target');
+const count = +counter.innerText;
+
+const increment = target / 200;
+
+if(count < target){
+
+counter.innerText = Math.ceil(count + increment);
+setTimeout(updateCounter,10);
+
+}else{
+
+counter.innerText = target;
+
+}
+
+};
+
+updateCounter();
+
+});
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">Cristiano Ronaldo</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#inicio">Inicio</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#biografia">Biografía</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#timeline">Línea de tiempo</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#logros">Logros</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#galeria">Galería</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contacto">Contacto</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- INICIO -->
+
+<header id="inicio">
+
+<div>
+
+<h1 class="display-4 fw-bold">Cristiano Ronaldo</h1>
+<p class="lead">Leyenda del fútbol mundial y capitán de Portugal</p>
+
+</div>
+
+</header>
+
+<!-- BIOGRAFIA -->
+
+<section id="biografia" class="container bio-section">
+
+<div class="row align-items-center bio-card">
+
+<div class="col-md-4 text-center">
+
+<img src="https://cdn3.futbin.com/content/fifa26/img/players/20801.png?fm=png&ixlib=java-2.1.0&verzion=1&w=324&s=f99b19e0331e9f257b452dd9f6a35915"
+class="bio-img">
+
+</div>
+
+<div class="col-md-8">
+
+<h2 class="section-title">Biografía</h2>
+
+<p>
+Cristiano nació en una familia humilde de la isla de Madeira Hijo menor de María Dolores (cocinera) y José Dinis Aveiro (jardinero y utillero de un club), creció en el barrio obrero de Santo António, compartiendo habitación con sus tres hermanos mayores , su madre pensó en abortar por las dificultades económicas, pero finalmente no lo hizo
+Desde niño mostró una pasión obsesiva por el fútbol comenzando en el Andorinha (donde trabajaba su padre) y luego en el C.D. Nacional Con solo 12 años dejó a su familia para ingresar en la academia del Sporting de Lisboa , vivía en una residencia de jugadores y a veces tenía que pedir comida sobrante en un McDonald's para alimentarse
+con 15 años le diagnosticaron una taquicardia que casi le impide jugar solucionandolo una operación y con su talento pronto destacó con 17 años debutó como profesional en el Sporting.
+</p>
+
+<p>
+Comenzó su carrera profesional en el Sporting de Lisboa y rápidamente llamó la
+atención del Manchester United en 2003 posteriormente jugó en clubes históricos
+como el Real Madrid , la Juventus, y actualmente juega en Al Nassr de Arabia Saudí
+</p>
+
+<p>
+Durante su carrera ha ganado múltiples títulos nacionales e internacionales,
+incluyendo Premier League, La Liga Española , La Serie A , Champions League , Eurocopa, Nations League y premios individuales como el Balón de Oro
+También es uno de los máximos goleadores de la historia del fútbol teniendo en su cuenta goleadora 965 goles y sumando , con el objetivo de ser el primer jugador en marcar 1000 goles oficciales en la historia del futbol.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LINEA DE TIEMPO -->
+
+<section id="timeline" class="container">
+
+<h2 class="section-title">Trayectoria de Cristiano Ronaldo</h2>
+
+<div class="timeline">
+
+<div class="timeline-item left">
+<div class="timeline-content">
+
+<h4>2003</h4>
+
+<img src="https://cdn.resfu.com/media/img_news/cristiano-ronaldo-en-su-etapa-como-jugador-del-manchester-united--youtube.jpg?size=1000x&lossy=1" class="timeline-img">
+
+<p>Debuta con el Manchester United y comienza su carrera internacional.</p>
+
+</div>
+</div>
+
+<div class="timeline-item right">
+<div class="timeline-content">
+
+<h4>2009</h4>
+
+<img src="https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2018%2F0630%2Fr394505_1296x729_16%2D9.jpg&w=1140&cquality=40&format=jpg" class="timeline-img">
+
+<p>Fichaje histórico con el Real Madrid.</p>
+
+</div>
+</div>
+
+<div class="timeline-item left">
+<div class="timeline-content">
+
+<h4>2016</h4>
+
+<img src="https://editorial.uefa.com/resources/026a-127a0b49d831-be403ca173bc-1000/format/wide1/portugal_v_france_-_final_uefa_euro_2016.jpeg?imwidth=2048" class="timeline-img">
+
+<p>Gana la Eurocopa con Portugal como capitán.</p>
+
+</div>
+</div>
+
+<div class="timeline-item right">
+<div class="timeline-content">
+
+<h4>2018</h4>
+
+<img src="https://www.lavanguardia.com/files/image_990_484/uploads/2018/07/16/5fa43e88eab94.jpeg" class="timeline-img">
+
+<p>Transferencia a la Juventus.</p>
+
+</div>
+</div>
+
+<div class="timeline-item left">
+<div class="timeline-content">
+
+<h4>2023</h4>
+
+<img src="https://www.es.amnesty.org/fileadmin/user_upload/shutterstock_editorial_13695815n.jpg" class="timeline-img">
+
+<p>Firma con Al Nassr y continúa ampliando su legado.</p>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- LOGROS -->
+
+<section id="logros" class="container">
+
+<h2 class="section-title">Logros</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card">
+
+<div class="card-body">
+
+<h5 class="card-title">Balón de Oro</h5>
+
+<p class="card-text">
+Cristiano Ronaldo ha ganado el Balón de Oro cinco veces durante su carrera.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card">
+
+<div class="card-body">
+
+<h5 class="card-title">Champions League</h5>
+
+<p class="card-text">
+Ha ganado la UEFA Champions League en cinco ocasiones con sus clubes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card">
+
+<div class="card-body">
+
+<h5 class="card-title">Máximo goleador</h5>
+
+<p class="card-text">
+Es uno de los máximos goleadores en la historia del fútbol.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="container text-center">
+
+<h2 class="section-title">Estadísticas de Cristiano Ronaldo</h2>
+
+<div class="row">
+
+<div class="col-md-3">
+<h1 class="display-4 counter" data-target="965">0</h1>
+<p>Goles en su carrera</p>
+</div>
+
+<div class="col-md-3">
+<h1 class="display-4 counter" data-target="5">0</h1>
+<p>Balones de Oro</p>
+</div>
+
+<div class="col-md-3">
+<h1 class="display-4 counter" data-target="5">0</h1>
+<p>Champions League</p>
+</div>
+
+<div class="col-md-3">
+<h1 class="display-4 counter" data-target="34">0</h1>
+<p>Títulos ganados</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section id="galeria" class="container">
+
+<h2 class="section-title">Galería</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-3">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" class="img-fluid rounded galeria-img">
+</div>
+
+<div class="col-md-4 mb-3">
+<img src="https://www.365scores.com/es/news/wp-content/uploads/2023/01/GettyImages-963682404-1024x675.jpg.webp"class="img-fluid rounded galeria-img">
+</div>
+
+<div class="col-md-4 mb-3">
+<img src="https://www.lanacion.com.py/resizer/v2/https%3A%2F%2Farc-anglerfish-arc2-prod-lanacionpy.s3.amazonaws.com%2Fpublic%2FMQAVRVJIKFE3RFTARRYFU62LTM.jpg?auth=18257e64a7716c3c5569c16b9057d9f04d340382c29ce17678ae636b90ee1402&width=1280&smart=true" class="img-fluid rounded galeria-img">
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACTO -->
+
+<section id="contacto" class="container">
+
+<h2 class="section-title">Contacto</h2>
+
+<form>
+
+<div class="mb-3">
+
+<label class="form-label">Nombre</label>
+<input type="text" class="form-control">
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Correo electrónico</label>
+<input type="email" class="form-control">
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Mensaje</label>
+<textarea class="form-control"></textarea>
+
+</div>
+
+<button class="btn btn-primary">Enviar</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>Actividad 20% Juan Correa - Biografía de Cristiano Ronaldo</p>
+
+</footer>
+
+
+<script>
+
+window.onload = function(){
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+const target = parseInt(counter.getAttribute("data-target"));
+let count = 0;
+
+const interval = setInterval(() => {
+
+count++;
+
+counter.innerText = count;
+
+if(count >= target){
+clearInterval(interval);
+}
+
+}, 5);
+
+});
+
+};
+
+</script>
